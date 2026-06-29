@@ -2,7 +2,23 @@
 
 **A full-stack application that identifies why municipal complaints get delayed and recommends the right department for faster resolution.**
 
-🌐 [Live Dashboard](https://visha-l127.github.io/mandate-vacuum-governance-intelligence) · ⚙️ React + Spring Boot + Oracle · 📊 3,026 BBMP complaints analyzed
+🌐 [Live Analytical Dashboard](https://visha-l127.github.io/mandate-vacuum-governance-intelligence) · ⚙️ React + Spring Boot + Oracle · 📊 3,026 BBMP complaints analyzed
+
+---
+
+## Important Note
+
+The live dashboard link shows the original deployed analytical frontend.
+
+This repository contains the upgraded full-stack version with:
+
+* Spring Boot REST APIs
+* Oracle Database persistence
+* Real-time complaint analysis flow
+* Recent request history from database
+* Full-stack proof screenshots
+
+The full-stack backend and Oracle database currently run locally.
 
 ---
 
@@ -12,12 +28,7 @@ Citizens file complaints about drainage, roads, garbage collection, electricity,
 
 **Mandate Vacuum** detects these responsibility gaps using governance metrics such as ownership entropy, accountability decay, and resolution improvement estimates.
 
-The project started as an analytical dashboard and was upgraded into a working full-stack prototype with:
-
-* React frontend
-* Spring Boot REST APIs
-* Oracle Database persistence
-* Real-time complaint analysis and recent request display
+The project started as an analytical dashboard and was upgraded into a working full-stack prototype.
 
 ---
 
@@ -264,7 +275,7 @@ If the database is already set up, do not run `insert_data.sql` again to avoid d
 * 3,026 BBMP civic complaint records used as analytical baseline
 * Backend connected to Oracle successfully
 * Metrics API returns all 6 civic complaint categories
-* Citizen complaint submission tested end-to-end
+* Complaint submission tested end-to-end
 * Submitted requests are stored in Oracle Database
 * Recent requests are fetched from Oracle and displayed in React
 * Core REST APIs tested locally
@@ -274,6 +285,7 @@ If the database is already set up, do not run `insert_data.sql` again to avoid d
 ## Limitations
 
 * Full-stack backend currently runs locally
+* Oracle database runs locally
 * No login or authentication yet
 * No live BBMP API integration yet
 * No trained ML prediction model yet
