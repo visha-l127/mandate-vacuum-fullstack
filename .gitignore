@@ -5,7 +5,6 @@ frontend/.env
 
 # Java / Maven / Spring Boot
 backend/target/
-backend/.mvn/wrapper/maven-wrapper.jar
 
 # IDE files
 .vscode/
@@ -25,3 +24,6 @@ Thumbs.db
 # Environment files
 .env
 *.env
+backend/.env
+service-account.json
+*service-account*.json
